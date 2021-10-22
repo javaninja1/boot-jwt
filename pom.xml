@@ -100,8 +100,6 @@
             <version>1.5.10</version>
         </dependency>
 
-        <!-- Mapper library to automate model transformations -->
-        <!-- https://www.baeldung.com/java-performance-mapping-frameworks -->
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
