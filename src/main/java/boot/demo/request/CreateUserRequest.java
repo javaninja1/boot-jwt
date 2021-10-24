@@ -2,7 +2,6 @@ package boot.demo.request;
 
 import lombok.Data;
 
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import java.util.Set;
 
@@ -17,6 +16,7 @@ public class CreateUserRequest {
     private String password;
     @NotBlank
     private String rePassword;
+    
     private Set<String> authorities;
 
 }
