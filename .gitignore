@@ -3,6 +3,11 @@
 
 target
 
+.classpath
+.factorypath
+.project
+.settings/
+
 .idea
 
 # Log file
