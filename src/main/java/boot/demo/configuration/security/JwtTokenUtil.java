@@ -21,7 +21,7 @@ import static java.lang.String.format;
 public class JwtTokenUtil {
 
     private final String jwtSecret = "12345678123456781234567812345678";
-     //"zdtlD3JK56m6wTTgsNFhqzjqP";
+    
     private final String jwtIssuer = "demo.io";
 
     private final Logger logger;

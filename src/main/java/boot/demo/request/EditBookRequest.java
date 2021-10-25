@@ -8,7 +8,6 @@ import javax.validation.constraints.NotNull;
 @Data
 public class EditBookRequest {
 
-
     @NotNull
     private String title;
 

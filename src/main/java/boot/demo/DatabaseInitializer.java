@@ -18,7 +18,7 @@ public class DatabaseInitializer implements ApplicationListener<ApplicationReady
             "bbb"
     );
     private final List<String> fullNames = List.of(
-            "Johny Cash",
+            "Johny C",
             "Drew B"
     );
     private final List<String> roles = List.of(
