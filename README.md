@@ -1,6 +1,6 @@
 # REST API with SpringBoot and JWT
 
-## This application show cases following
+## This application showcases following:
 
 ### Spring security
 
@@ -8,8 +8,11 @@
 
 ### REST API for CRUD operations
 
-### Swagger Documentation using annotation
-
 ### Spring Data JPA
 
 ### mapstruct for mapping POJOs
+
+### Swagger Documentation using annotation
+
+### JWT token based authentication with Swagger testing 
+

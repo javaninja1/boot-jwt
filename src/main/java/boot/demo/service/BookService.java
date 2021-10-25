@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -45,7 +46,7 @@ public class BookService {
         return bookViewMapper.toBookView(book);
     }
 
-    public BookView getBook(Long id) {
+    public BookView findById(Long id) {
         Book book = bookRepo.findById(id).get();
         return bookViewMapper.toBookView(book);
     }
@@ -55,4 +56,7 @@ public class BookService {
         return bookViewMapper.toBookView(books);
     }
 
+    public List<BookView> findAll() {
+        return bookRepo.findAll().stream().map(e -> bookViewMapper.toBookView(e)).collect(Collectors.toList());
+    }
 }

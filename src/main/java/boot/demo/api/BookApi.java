@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
+import java.util.List;
 
 @Tag(name = "Book")
 @RestController @RequestMapping(path = "api/v1/books")
@@ -43,12 +44,17 @@ public class BookApi {
         return bookService.delete(id);
     }
 
+    @RolesAllowed(Role.BOOK_ADMIN)
     @GetMapping("{id}")
     public BookView get(@PathVariable Long id) {
-        return bookService.getBook(id);
+        return bookService.findById(id);
     }
 
-
+    @RolesAllowed(Role.BOOK_ADMIN)
+    @GetMapping("")
+    public List<BookView> getAll() {
+        return bookService.findAll();
+    }
 
 
 }
